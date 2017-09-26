@@ -32,6 +32,7 @@ if sys.version_info[0] < 3:
         import gio
     except ModuleNotFoundError:
         sys.path.append("/usr/lib/python2.7/dist-packages")
+        sys.path.append("/usr/lib/python2.7/dist-packages/gtk-2.0")
         import gio
 else:
     from urllib.parse import quote
